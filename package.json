@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.27.3",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  },
+  "name": "hangperson",
+  "version": "1.0.0",
+  "description": "jogo da forca no discord",
+  "main": "src/index.js",
+  "repository": "https://github.com/frangyt/hangperson.git",
+  "author": "frangit",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "eslint": "^8.9.0"
+  }
+}
