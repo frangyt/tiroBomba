@@ -1,2 +1,2 @@
-# hangperson
-joguinho da forca no discord
+# Tiro e Bomba
+Jogo popular Tiro e Bomba no Discord
