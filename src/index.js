@@ -57,8 +57,20 @@ for (const file of eventFiles) {
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
 
-	if (interaction.commandName === 'ping') {
+	const numbers = new Set();
+	let senha = ' ';
+
+	switch (interaction.commandName) {
+	case 'ping':
 		await interaction.reply('Pong!');
+		break;
+	case 'play':
+		while (numbers.size < 4) {
+			numbers.add(Math.floor(1 + Math.random() * 9));
+		}
+		for (const number of numbers) senha += number;
+		await interaction.reply(senha);
+		break;
 	}
 });
 
