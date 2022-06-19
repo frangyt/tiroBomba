@@ -4,7 +4,10 @@
     "@discordjs/rest": "^0.3.0",
     "discord-api-types": "^0.27.3",
     "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.1"
+  },
+  "scripts": {
+    "start": "node ."
   },
   "name": "hangperson",
   "version": "1.0.0",
