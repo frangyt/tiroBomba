@@ -6,9 +6,11 @@ module.exports = {
 		.setDescription('gera 4 numeros aleatórios'),
 	async execute(interaction) {
 		const numbers = new Set();
+		let senha = '';
 		while (numbers.size < 4) {
-			numbers.add(1 + Math.floor(Math.random() * 10));
+			numbers.add(1 + Math.floor(Math.random() * 9));
 		}
-		await interaction.reply(numbers.values);
+		for (const number of numbers) senha += number;
+		await interaction.reply(senha);
 	},
 };
